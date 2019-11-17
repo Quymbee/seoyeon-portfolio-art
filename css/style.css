@@ -1,11 +1,105 @@
-﻿.whole-grid{
+﻿p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    color: #F6C5BB;
+}
+
+.whole-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 20% 1fr;
     /*col 1 is navbar. col 2 is art gallery*/
 }
 
 .nav-bar{
-
+    grid-column: 1;
+    grid-row: 1;
 }
 
+.logo{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    display: block;
+}
 
+h1.nav-h1 {
+    font-size: 1.5em;
+    border-bottom: 5px solid #FDEAE5;
+    display: inline-block;
+    padding: 0 3.5em 0 0;
+    margin-left: 10%;
+    margin-top: 0;
+    font-weight: 200;
+}
+
+p.nav-p{
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 5px 10% 10px 10%; 
+}
+
+ul.nav-ul {
+    list-style-type: none;
+    margin: 10px 10% 20px 10%;
+    overflow: auto;
+    padding: 0;
+}
+
+li.nav-li {
+    text-decoration: none;
+}
+
+li.nav-li a:hover{
+    color: #FDEAE5;
+}
+
+a.nav-a{
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.gallery{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gal-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.gal-col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+.gal-col img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gal-h1 {
+    font-size: 2em;
+    border-bottom: 5px solid #E3DED4;
+    display: inline-block;
+    padding: 0 100% 0 0;
+    margin: 20px 0 0 20px;
+    font-weight: 300;
+    color: #F6C5BB;
+}
