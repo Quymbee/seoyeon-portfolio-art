@@ -15,15 +15,35 @@ a {
     color: #F6C5BB;
 }
 
-.whole-grid{
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    /*col 1 is navbar. col 2 is art gallery*/
-}
 
 .nav-bar{
-    grid-column: 1;
-    grid-row: 1;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    margin: 10px 10% 20px 10%;
+    padding: 0;
+}
+
+.nav-bar li{
+    text-decoration: none;
+    margin: 0 0 5px 0;
+}
+
+.nav-bar li a{
+    padding: 6px 8px 6px 0;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #F6C5BB;
+}
+
+.nav-bar li a:hover{
+    color: #FDEAE5;
 }
 
 .logo{
@@ -35,7 +55,7 @@ a {
     display: block;
 }
 
-h1.nav-h1 {
+.nav-bar h1{
     font-size: 1.5em;
     border-bottom: 5px solid #FDEAE5;
     display: inline-block;
@@ -45,61 +65,67 @@ h1.nav-h1 {
     font-weight: 200;
 }
 
-p.nav-p{
+.nav-bar p{
     font-size: 1.2em;
     display: inline-block;
     margin: 5px 10% 10px 10%; 
 }
 
-ul.nav-ul {
-    list-style-type: none;
-    margin: 10px 10% 20px 10%;
-    overflow: auto;
-    padding: 0;
-}
-
-li.nav-li {
-    text-decoration: none;
-}
-
-li.nav-li a:hover{
-    color: #FDEAE5;
-}
-
-a.nav-a{
-    font-size: 1.4em;
-    font-weight: 300;
-}
-
 .gallery{
-    grid-column: 2;
-    grid-row: 1;
+    margin-left: 25%;
+    padding: 0 10px;
 }
 
-.gal-row{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.gal-col{
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 4px;
-}
-
-.gal-col img{
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.gal-h1 {
+.gallery h1 {
     font-size: 2em;
     border-bottom: 5px solid #E3DED4;
     display: inline-block;
-    padding: 0 100% 0 0;
+    padding: 0 65% 0 0;
     margin: 20px 0 0 20px;
     font-weight: 300;
     color: #F6C5BB;
+}
+
+.gal-container{
+    margin: 0 20% 0 20px;
+    max-width: 1200px;
+}
+
+.responsive-img{
+    max-width: 100%;
+}
+
+.gal-cell{
+    margin: 5px;
+}
+
+.gal-cell img{
+    display:block;
+}
+
+.gallery video{
+    display:block;
+    margin: 0 10%;
+    width: 100%;
+    height: auto;
+}
+
+/*tablet*/
+@media screen and (min-width: 600px){
+    .gal-grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .gal-cell{
+        width: calc(50%-10px);
+    }
+}
+
+/*desktop*/
+@media screen and (min-width: 1000px){
+    .gal-cell{
+        width: calc(33.333333%-10px);
+    }
 }
