@@ -1,0 +1,11 @@
+﻿.whole-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*col 1 is navbar. col 2 is art gallery*/
+}
+
+.nav-bar{
+
+}
+
+
