@@ -3,9 +3,97 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400&display=swap" rel="stylesheet">
+
+    <!-- personal script -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Eunice</title>
 </head>
+
+<!--side nav bar-->
+<div class="nav-bar">
+    <img class="logo" src="img/LogoBig.png" alt="logo">
+
+    <h1>SEOYEON HAN</h1>
+    <p>
+        Made in Korea. NYC based.
+        Animated & Illustrator.
+        Loves watching historical dramas, cats, and all things pink!
+    </p>
+
+    <ul>
+        <li><a href="animation.html" class="nav-a">ANIMATION</a></li>
+        <li><a href="illustration.html" class="nav-a">ILLUSTRATION</a></li>
+        <li><a href="fanwork.html" class="nav-a">FANWORK</a></li>
+        <li><a href="zinework.html" class="nav-a">ZINEWORK</a></li>
+    </ul>
+
+</div>
+
+<div class="gallery">
+    <h1>ILLUSTRATION</h1>
+
+    <div class="row">
+        <div class="column">
+            <img src="img/TempPic.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/TempPic.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/TempPic.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/TempPic.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/TempPic.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/TempPic.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="img/TempPic.png" style="width:100%;">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/TempPic.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/TempPic.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/TempPic.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
 <body>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
