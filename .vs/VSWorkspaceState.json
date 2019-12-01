@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\img",
+    "\\img\\ZINEWORK",
+    "\\img\\ZINEWORK\\ActualImage"
   ],
-  "SelectedNode": "\\animation.html",
+  "SelectedNode": "\\zinework.html",
   "PreviewInSolutionExplorer": false
 }
