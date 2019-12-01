@@ -108,15 +108,15 @@ a {
     box-sizing: border-box;
 }
 
-.row{
+.row-gal{
     margin: 0 20% 0 2%;
 }
 
-.row > .column {
+.row-gal > .column {
     padding: 10px 8px;
 }
 
-.row:after {
+.row-gal:after {
     content: "";
     display: table;
     clear: both;
@@ -243,10 +243,10 @@ img {
     position: relative;
     padding-bottom: 25%;
     height: 0;
+    max-width: 1920px;
     overflow: hidden;
-    max-width: 512px;
     height: auto;
-    margin-left: 20%;
+    width: auto;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
@@ -255,8 +255,16 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+ 
 }
 
+.border-control {
+    max-width: 640px;
+    margin-left: 13%;
+    margin-right: 20%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 
 
 
@@ -274,13 +282,39 @@ img {
         width: calc(50%-10px);
     }
 
-    .embed-container{
-        margin-left: 5%;
+    .row-gal{
+        margin: 0 10% 0 5%;
     }
+
+    .nav-bar h1{
+        padding: 0 1em 0 0;
+        font-size: 1em;
+    }
+
+    .nav-bar p{
+        font-size: 0.8em;
+    }
+
+    .nav-bar li a{
+        font-size: 0.9em;
+    }
+
+    .gallery h1{
+        padding: 0 42% 0 0;
+    }
+
+    .border-control {
+        max-width: 384px;
+        margin-left: 5%;
+        margin-right: 15%;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
 }
 
 /*desktop*/
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
     .gal-cell{
         width: calc(33.333333%-10px);
     }
