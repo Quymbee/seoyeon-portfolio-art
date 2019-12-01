@@ -147,8 +147,7 @@ a {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
-    max-width: 500px;
+    max-width: 1000px;
 }
 
 /* The Close Button */
@@ -216,6 +215,28 @@ img {
     background-color: black;
     padding: 2px 16px;
     color: white;
+}
+
+.cf{
+    position: relative;
+    margin: auto;
+}
+
+.cf img.top{
+    position: relative;
+}
+.cf img{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.cf:hover img.top{
+    opacity:0;
 }
 
 .demo {
